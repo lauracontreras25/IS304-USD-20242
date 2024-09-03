@@ -59,3 +59,14 @@ def menu():
         print("5. Salir")
 
         opcion = input("Seleccione una opción: ")
+
+if opcion == '1':
+            numeroCta = input("Ingrese el número de cuenta: ")
+            nombreCliente = input("Ingrese el nombre del cliente: ")
+            fechaApertura = input("Ingrese la fecha de apertura (DD/MM/AAAA): ")
+            saldoInicial = float(input("Ingrese el saldo inicial (mínimo 100,000 pesos): "))
+            try:
+                cuenta = CuentaBancaria(numeroCta, nombreCliente, fechaApertura, saldoInicial)
+                print("Cuenta creada exitosamente.")
+            except ValueError as e:
+                print(f"Error: {e}")
