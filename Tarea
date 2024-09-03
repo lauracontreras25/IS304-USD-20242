@@ -1,0 +1,30 @@
+class CuentaBancaria
+def_init_(self, numeroCta=None, nombreCliente=None, fechaApertura=None, saldo=0):
+  if saldo <100000:
+      raise ValueError("El saldo debe ser al menos de 100.000 pesos")
+  self._numeroCta = numeroCta
+  self._nombreCliente = nombreCliente
+  self._fechaApertura = fechaApertura
+  self._saldo = saldo
+
+def get_numeroCta(self):
+  return self._numeroCta
+
+def get_nombreCliente(self):
+  return self._nombreCliente
+
+def get_fechaApertura(self):
+  return self._fechaApertura
+
+def get_saldo(self):
+  return self._saldo
+
+def set_numeroCta(self, numeroCta):
+  self._numeroCta = numeroCta
+
+def set_nombreCliente(self, nombreCliente):
+  self._nombreCliente = nombreCliente
+
+def set_fechaApertura(self, fechaApertura):
+  self._fechaApertura = fechaApertura
+
