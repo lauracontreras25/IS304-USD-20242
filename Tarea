@@ -43,7 +43,7 @@ def retirar(self, monto):
           print(f"Retiro exitoso. Nuevo saldo: {self.__saldo} pesos.")
 
 def mostrarDetalles(self):
-        print(f"Número de cuenta: {self.__numeroCta}")
+        print(f"Numero de cuenta: {self.__numeroCta}")
         print(f"Nombre del cliente: {self.__nombreCliente}")
         print(f"Fecha de apertura: {self.__fechaApertura}")
         print(f"Saldo: {self.__saldo} pesos")
@@ -51,7 +51,7 @@ def mostrarDetalles(self):
 def menu():
     cuenta = None  
     while True:
-        print("Menú de Cuenta Bancaria")
+        print("Menu de Cuenta Bancaria")
         print("1. Aperturar cuenta")
         print("2. Consignar dinero")
         print("3. Retirar dinero")
@@ -61,7 +61,7 @@ def menu():
         opcion = input("Seleccione una opción: ")
 
 if opcion == '1':
-            numeroCta = input("Ingrese el número de cuenta: ")
+            numeroCta = input("Ingrese el numero de cuenta: ")
             nombreCliente = input("Ingrese el nombre del cliente: ")
             fechaApertura = input("Ingrese la fecha de apertura (DD/MM/AAAA): ")
             saldoInicial = float(input("Ingrese el saldo inicial (mínimo 100,000 pesos): "))
