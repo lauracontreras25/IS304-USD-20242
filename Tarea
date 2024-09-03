@@ -1,4 +1,4 @@
-class CuentaBancaria
+.class CuentaBancaria
 def_init_(self, numeroCta=None, nombreCliente=None, fechaApertura=None, saldo=0):
   if saldo <100000:
       raise ValueError("El saldo debe ser al menos de 100.000 pesos")
