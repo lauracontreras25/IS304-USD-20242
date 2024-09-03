@@ -49,7 +49,7 @@ def mostrarDetalles(self):
         print(f"Saldo: {self.__saldo} pesos")
 
 def menu():
-    cuenta = None  # Inicialmente, no hay ninguna cuenta creada
+    cuenta = None  
     while True:
         print("Menú de Cuenta Bancaria")
         print("1. Aperturar cuenta")
@@ -72,7 +72,7 @@ if opcion == '1':
                 print(f"Error: {e}")
 
 elif opcion == '2':
-            if cuenta:  # Verifica si la cuenta ha sido creada
+            if cuenta:  
                 monto = float(input("Ingrese el monto a consignar: "))
                 try:
                     cuenta.consignar(monto)
@@ -82,7 +82,7 @@ elif opcion == '2':
                 print("Primero debe aperturar una cuenta.")
 
 elif opcion == '3':
-            if cuenta:  # Verifica si la cuenta ha sido creada
+            if cuenta:  
                 monto = float(input("Ingrese el monto a retirar: "))
                 try:
                     cuenta.retirar(monto)
@@ -90,3 +90,20 @@ elif opcion == '3':
                     print(f"Error: {e}")
             else:
                 print("Primero debe aperturar una cuenta.")
+
+elif opcion == '4':
+            if cuenta:  
+                cuenta.mostrarDetalles()
+            else:
+                print("Primero debe aperturar una cuenta.")
+
+        elif opcion == '5':
+            print("Gracias por utilizar el sistema de cuentas bancarias.")
+            break
+
+        else:
+            print("Opción no válida. Intente nuevamente.")
+
+
+menu()
+
