@@ -41,3 +41,21 @@ def retirar(self, monto):
       raise ValueError("Fondos insuficientes para realizar el retiro.")
         self.__saldo -= monto
           print(f"Retiro exitoso. Nuevo saldo: {self.__saldo} pesos.")
+
+def mostrarDetalles(self):
+        print(f"Número de cuenta: {self.__numeroCta}")
+        print(f"Nombre del cliente: {self.__nombreCliente}")
+        print(f"Fecha de apertura: {self.__fechaApertura}")
+        print(f"Saldo: {self.__saldo} pesos")
+
+def menu():
+    cuenta = None  # Inicialmente, no hay ninguna cuenta creada
+    while True:
+        print("Menú de Cuenta Bancaria")
+        print("1. Aperturar cuenta")
+        print("2. Consignar dinero")
+        print("3. Retirar dinero")
+        print("4. Mostrar detalles de la cuenta")
+        print("5. Salir")
+
+        opcion = input("Seleccione una opción: ")
