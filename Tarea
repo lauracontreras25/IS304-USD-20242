@@ -70,3 +70,13 @@ if opcion == '1':
                 print("Cuenta creada exitosamente.")
             except ValueError as e:
                 print(f"Error: {e}")
+
+elif opcion == '2':
+            if cuenta:  # Verifica si la cuenta ha sido creada
+                monto = float(input("Ingrese el monto a consignar: "))
+                try:
+                    cuenta.consignar(monto)
+                except ValueError as e:
+                    print(f"Error: {e}")
+            else:
+                print("Primero debe aperturar una cuenta.")
