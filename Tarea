@@ -28,3 +28,16 @@ def set_nombreCliente(self, nombreCliente):
 def set_fechaApertura(self, fechaApertura):
   self._fechaApertura = fechaApertura
 
+def consignar(self, monto):
+  if monto <= 0:
+    raise ValueError("El monto a consignar debe ser positivo.")
+        self.__saldo += monto
+          print(f"Consignación exitosa. Nuevo saldo: {self.__saldo} pesos.")
+
+def retirar(self, monto):
+  if monto <= 0:
+        raise ValueError("El monto a retirar debe ser positivo.")  
+  if monto > self.__saldo:
+      raise ValueError("Fondos insuficientes para realizar el retiro.")
+        self.__saldo -= monto
+          print(f"Retiro exitoso. Nuevo saldo: {self.__saldo} pesos.")
