@@ -22,4 +22,3 @@ def cuenta_atras(inicio, intervalo):
 inicio = int(input("Ingresa el número de inicio de la cuenta atrás: "))
 intervalo = int(input("Ingresa el intervalo (en segundos) entre cada número: "))
 
-cuenta_atras(inicio, intervalo)
